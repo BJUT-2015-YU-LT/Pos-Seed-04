@@ -4,5 +4,20 @@
     "unit": "瓶",
     "price": 3.00,
     "promotion": "true"
+  },
+  "ITEM000099":{
+    "name": "小购物袋",
+    "unit": "个",
+    "price": 0.2
+  },
+  "ITEM000098":{
+    "name": "中购物袋",
+    "unit": "个",
+    "price": 0.5
+  },
+  "ITEM000097":{
+    "name": "大购物袋",
+    "unit": "个",
+    "price": 0.8
   }
 }

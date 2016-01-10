@@ -18,10 +18,11 @@ public class pos {
             double total = 0;
             double total1=0;
             String str = "";
+            String str1 = "";
             str = str + "***商品购物清单***\n";
             for(int i=0;i<index.size();i++)
             {
-                if(index.get(i).promotion=="null") {
+                if(index.get(i).promotion.equals("null")) {
                     str = str + "名称：" + index.get(i).name + ",数量:" + index.get(i).num + index.get(i).unit + ",单价："
                             + df.format(index.get(i).price) + "(元)，小计：" +
                             df.format(index.get(i).price * index.get(i).num * index.get(i).discount) + "(元)\n";
@@ -50,10 +51,10 @@ public class pos {
                         str=str+"输入商品件数错误，请检查后重新输入！\n";
                         return str;
                     }
-                    str=str+"- - - - - - - - - - - - - -\n挥泪赠送商品：\n名称："+index.get(i).name+",数量："+(int)index.get(i).num/3+index.get(i).unit+"\n";
+                    str1=str1+"- - - - - - - - - - - - - -\n挥泪赠送商品：\n名称："+index.get(i).name+",数量："+(int)index.get(i).num/3+index.get(i).unit+"\n";
                 }
             }
-            str=str+"- - - - - - - - - - - - - -\n";
+            str=str+str1+"- - - - - - - - - - - - - -\n";
             str=str+"总计："+df.format(total1)+"(元)\n"+"节省："+df.format(total1=total-total1)+"(元)\n***************************";
             return str;
         }
@@ -106,7 +107,7 @@ public class pos {
                     thing.discount = Double.parseDouble(JS.get("discount").toString());
                 }
                 if(JS.get("promotion")!=null){
-                    thing.promotion="true";
+                    thing.promotion=JS.get("promotion").toString();
                 }
                 item.add(thing);
             }
