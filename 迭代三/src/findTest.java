@@ -12,10 +12,10 @@ public class findTest {
 
     @Test
     public void testFind() throws Exception {
-        pos.pocs ped=new pos.pocs();
-        String mess = ped.readJson("C:\\Users\\cyd\\Desktop\\需求四\\src\\data2");
+        pos.pocs fir=new pos.pocs();
+        String mess = fir.readJson("C:\\Users\\cyd\\Desktop\\迭代三\\src\\data2");
         List<String> item = new ArrayList<String>();
-        item = ped.find(mess);
-        assertEquals( "ITEM000000",item.get(0));
+        item=fir.getUser(mess);
+        assertEquals("ITEM000000",fir.find(item.get(1)).get(0));
     }
 }

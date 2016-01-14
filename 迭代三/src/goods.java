@@ -7,6 +7,7 @@ public class goods {
     String unit;
     double price;
     double discount=1.00;
+    double vipDiscount=1.00;
     String promotion="null";
     int num=1;
 }
