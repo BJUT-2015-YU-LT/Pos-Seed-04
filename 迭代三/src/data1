@@ -1,2 +1,1 @@
-{"USER001":{"name":"USER 001","isVip":true,"point":8},"USER002":{"name":"USER 002","isVip":false,"point":0},"USER003":{"name":"USER 003","isVip":true,"point":0},"USER004":{"name":"周昔月","isVip":"true","point":6}}
-/*{"USER001":{"name":"USER 001","isVip":true},"USER002":{"name":"USER 002","isVip":false},"USER003":{"name":"USER 003","isVip":true}}
+{"USER001":{"name":"USER 001","isVip":true,"point":5},"USER002":{"name":"USER 002","isVip":false,"point":4},"USER003":{"name":"USER 003","isVip":true,"point":4},"mnm":{"name":"isVip","isVip":"0","point":1},"USER006":{"name":"程煜东","isVip":"isVip","point":5}}

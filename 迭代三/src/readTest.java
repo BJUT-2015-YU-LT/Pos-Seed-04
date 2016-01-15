@@ -17,6 +17,6 @@ public class readTest {
         String mess = pir.readJson("C:\\Users\\cyd\\Desktop\\迭代三\\src\\data1");
         JSONObject jsonObject = JSONObject.fromObject(mess);
         JSONObject JS = jsonObject.getJSONObject("USER001");
-        assertEquals("USER 001",JS.get("name").toString());
+        assertEquals("USER001",JS.get("name").toString());
     }
 }

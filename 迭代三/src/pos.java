@@ -108,7 +108,7 @@ public class pos {
                 e.printStackTrace();
             }
             PrintWriter out = new PrintWriter(fw);
-            out.write(mess+"\n/*{\"USER001\":{\"name\":\"USER 001\",\"isVip\":true},\"USER002\":{\"name\":\"USER 002\",\"isVip\":false},\"USER003\":{\"name\":\"USER 003\",\"isVip\":true}}");
+            out.write(mess);
             out.println();
             try {
                 fw.close();
